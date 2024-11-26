@@ -4,16 +4,16 @@ import java.util.Scanner;
 public class Problema3_DiasCostodiaTrabajo {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-        String NomEmpleado;
+        String nomEmpleado;
         int diasWork, costoDia, costoPagar, contador = 1;
         while(contador <= 5){
             System.out.print("INGRESE NOMBRE, DIAS TRABAJOS, Y COSTO POR DÍA DEL EMPLEDADO" + contador + ": ");
-            NomEmpleado = tcl.next();
+            nomEmpleado = tcl.next();
             diasWork = tcl.nextInt();
             costoDia = tcl.nextInt();
             costoPagar = (diasWork * costoDia);
             System.out.printf("| %10s\t| %10s\t| %10s\t| %10s\t|\n", "NOMBRE", "DIAS", "COSTO DIA", "TOTAL");
-            System.out.printf("| %10s\t| %10d\t| %10d\t| %10d\t|\n", NomEmpleado, diasWork, costoDia, costoPagar);
+            System.out.printf("| %10s\t| %10d\t| %10d\t| %10d\t|\n", nomEmpleado, diasWork, costoDia, costoPagar);
             contador++;
         }
     }
